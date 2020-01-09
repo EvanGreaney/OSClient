@@ -90,14 +90,42 @@ public class Client
 					System.out.println(message);
 					message = console.next();
 					sendMessage(message);
+					//Agent Final Message
+					message = (String)in.readObject();
+					System.out.println(message);
+				}
+				//Club
+				else if (message.equals("2")) {
+					//Club Name
+					message = (String)in.readObject();
+					System.out.println(message);
+					message = console.next();
+					sendMessage(message);
+					//Club Email
+					message = (String)in.readObject();
+					System.out.println(message);
+					message = console.next();
+					sendMessage(message);
+					//Club ID
+					message = (String)in.readObject();
+					System.out.println(message);
+					message = console.next();
+					sendMessage(message);
+					//Club Funds
+					message = (String)in.readObject();
+					System.out.println(message);
+					message = console.next();
+					sendMessage(message);
+					//Club Final Message
+					message = (String)in.readObject();
+					System.out.println(message);
 				}
 				
 				
-				message = (String)in.readObject();
-				System.out.println(message);
+				
 				
 			}
-			
+			//Login
 			else if(message.equals("2"))
 			{
 				
