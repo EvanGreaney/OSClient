@@ -60,6 +60,7 @@ public class Client
 		
 		
 		    /// Client App.
+			do {
 			message = (String)in.readObject();
 			System.out.println(message);
 			message = console.next();
@@ -121,15 +122,28 @@ public class Client
 					System.out.println(message);
 				}
 				
-				
-				
-				
 			}
 			//Login
 			else if(message.equals("2"))
 			{
-				
-			}
+				message = (String)in.readObject();
+				System.out.println(message);
+				message = console.next();
+				sendMessage(message);
+				if (message.equals("1")) {
+					//Agent Name
+					message = (String)in.readObject();
+					System.out.println(message);
+					message = console.next();
+					//Agent ID
+					message = (String)in.readObject();
+					System.out.println(message);
+					message = console.next();
+					}
+				else if (message.equals("2")) {
+					
+				}
+			}} while (!message.equals("1") && !message.equals("2"));
 			
 			message = (String)in.readObject();
 			System.out.println(message);
